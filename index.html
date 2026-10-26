@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Filmes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        input,
+        button {
+            padding: 6px;
+            margin: 2px;
+        }
+
+        .btn-ordenar {
+            background: #eee;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+
+        .btn-ordenar.selecionado {
+            background: #4a90e2;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meus Filmes</h1>
+
+    <input type="text" id="nomeFilme" placeholder="Nome do filme">
+    <button id="btn-adicionar">Adicionar filme</button>
+
+    <div>
+        <button id="btn-az" class="btn-ordenar">Ordenar A-Z</button>
+        <button id="btn-za" class="btn-ordenar">Ordenar Z-A</button>
+    </div>
+
+    <div>
+        <input type="text" id="busca" placeholder="Buscar filme...">
+    </div>
+
+    <ol id="lista"></ol>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
